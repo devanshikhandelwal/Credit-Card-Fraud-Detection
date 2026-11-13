@@ -213,12 +213,12 @@ def get_model():
 
 @st.cache_data
 def load_analytics_data():
-    path = OUTPUT_DIR / "train_processed.csv"
+    path = OUTPUT_DIR / "train_processed.csv.gz"
 
     if not path.exists():
         return None
 
-    return pd.read_csv(path)
+    return pd.read_csv(path, compression="gzip")
 
 
 @st.cache_data
