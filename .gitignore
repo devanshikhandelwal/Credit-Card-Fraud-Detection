@@ -1,0 +1,35 @@
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+
+# Environment variables and secrets
+.env
+.streamlit/secrets.toml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw datasets
+data/*.csv
+
+# Large processed datasets and matrices
+outputs/train_processed.csv
+outputs/test_processed.csv
+outputs/X_train.npz
+outputs/X_val.npz
+outputs/y_train.npy
+outputs/y_val.npy
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
